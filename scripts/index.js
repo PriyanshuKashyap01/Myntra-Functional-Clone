@@ -1,3 +1,10 @@
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        // If the page is loaded from the cache, reload it
+        window.location.reload();
+    }
+});
+
 let bagItems = [];
 onLoad();
 
